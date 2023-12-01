@@ -1,0 +1,128 @@
+html {
+    scroll-behavior: smooth;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 20px;
+    font-size: larger;
+}
+
+nav ul li {
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+
+nav ul span {
+    color: blue;
+    opacity: 0.8;
+    margin-right: 5px;
+}
+
+#menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+
+#menu div {
+    width: 25px;
+    background-color: black;
+    height: 3px;
+    margin-bottom: 4px;
+}
+
+#navigate {
+    display: flex;
+    padding: 40px;
+}
+
+#navigate a {
+    text-decoration: none;
+    color: black;
+}
+
+#sidebar {
+    width: 250px;
+    position: absolute;
+    top: 0;
+    left: -250px;
+    background-color: aquamarine;
+    height: 100vh;
+    padding: 40px;
+    padding-top: 60px;
+    z-index: 3;
+}
+
+@keyframes hide-show{
+    from {
+        left: -250px;
+    }
+
+    to {
+        left: 0;
+    }
+}
+
+.show {
+    position: absolute;
+    animation-name: hide-show;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes show-hide{
+    from {
+        left: 0px;
+    }
+
+    to {
+        left: -250px;
+    }
+}
+
+.hide {
+    position: absolute;
+    animation-name: show-hide;
+    animation-duration: 0.5s;
+}
+
+@media (min-width:800px) {
+    #sidebar {
+        width: 100vw;
+        height: auto;
+        top: 0;
+        left: 0;
+        padding: 40px;
+        background-color: white;
+    }
+
+    #head {
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+    }
+    
+}
+
+@media (min-width:800px) {
+    nav ul {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width:1200px) {
+    nav ul {
+        font-size: 1.3rem;
+    }   
+}
+
+@media (min-width:1400px) {
+    nav ul {
+        font-size: 1.6rem;
+    }   
+}

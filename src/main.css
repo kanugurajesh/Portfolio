@@ -1,0 +1,374 @@
+:root {
+    --image-width:210px;
+    --universal-width:55vw;
+    --universal-gap:20px;
+    --universal-height:100px;
+}
+
+#section1 {
+    margin-top: 25px;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto;
+    gap: 20px;
+    justify-items: center;
+}
+
+#width {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#section1-div {
+    width: var(--image-width);
+    height: var(--image-width);
+    border-right: 4px solid blue;
+    border-top: 4px solid blue;
+    position: relative;
+}
+
+#section1-img {
+    width: var(--image-width);
+    height: var(--image-width);
+    position: absolute;
+    left: -15px;
+    top: 15px;
+    padding: 1px;
+}
+
+#section1 h1 {
+    padding: 40px 33px 15px 30px;
+    font-size: xx-large;
+    font-weight: 900;
+    line-height: 1.5;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+#section1 h1 span {
+    color: blue;
+}
+
+#section1 p {
+    letter-spacing: 1px;
+    line-height: 1.5;
+    padding: 20px;
+    padding-left: 30px;
+    font-size: larger;
+    text-align: center;
+}
+
+#icons {
+    padding-top: 20px;
+}
+
+#icons ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+#icons ul li {
+    cursor: pointer;
+}
+
+#icons ul li:hover {
+    scale: 1.1;
+}
+
+#button {
+    max-width: 200px;
+    font-size: larger;
+    text-decoration: none;
+    background-color: blue;
+    padding: 20px 40px;
+    border-radius: 10px;
+    color: white;
+    font-weight: 900;
+    text-align: center;
+}
+
+form {
+    position: fixed;
+    top: 40%;
+    z-index: 1;
+}
+
+form > div {
+    background-color: #ccc;
+    padding: 20px;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+}
+
+form input {
+    height: 30px;
+    padding: 15px;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    border: none;
+}
+
+form textarea {
+    height: 70px;
+    padding: 15px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    resize: none;
+}
+
+form button {
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+}
+
+#name {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#close {
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 1px;
+    width: 25px;
+}
+
+@media (min-width:600px) {
+    form {
+        width: 350px;
+    }
+    
+    form > div {
+        padding-right: 25px;
+    }
+}
+
+@media (min-width:800px) {
+    #section1 {
+        grid-template-areas: 
+        "icon header image"
+        "icon content content"
+        "icon button button";
+        grid-template-columns: 50px 1fr 1fr;
+        padding: 40px;
+        justify-items: normal;
+    }
+
+    #section1-div {
+        grid-area: image;
+    }
+
+    #section1 h1 {
+        margin: auto;
+        grid-area: header;
+        width: var(--universal-width);
+        text-align: left;
+        line-height: 1.6;
+        font-size: 2.1rem;
+    }
+
+    #section1 p {
+        grid-area: content;
+        width: calc(var(--universal-width) + var(--image-width) - var(--universal-gap));
+        text-align: left;
+    }
+
+    #icons{
+        grid-area: icon;
+        position: relative;
+    }
+
+    #icons ul {
+        flex-direction: column;
+    }
+
+    #icons::after {
+    content: '';
+    position: absolute;
+    top: 310px;
+    left: 25px;
+    height: var(--universal-height);
+    width: 3px;
+    background-color: blue;
+    }
+
+    #button {
+        grid-area: button;
+        margin-left: 30px;
+    }
+
+    form {
+        width: 500px;
+    }
+
+    form > div {
+        background-color: #ccc;
+        padding: 25px;
+        padding-top: 40px;
+        gap: 15px;
+    }
+    
+    form input {
+        height: 35px;
+        padding: 20px;
+        font-size: 1rem;
+        border-radius: 5px;
+        border: none;
+    }
+    
+    form textarea {
+        height: 90px;
+        padding: 20px;
+        font-size: 1rem;
+        border: none;
+        border-radius: 5px;
+        resize: none;
+    }
+    
+    form button {
+        border-radius: 5px;
+        padding: 15px;
+        font-size: 1rem;
+        border: none;
+    }
+    
+    #name {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 10px;
+    }
+    
+    #name input {
+        width: 215px;
+    }
+
+    #close {
+        cursor: pointer;
+        position: absolute;
+        top: 10px;
+        right: 1px;
+        width: 25px;
+    }
+    
+}
+
+@media (min-width:900px) {
+    #section1 h1 {
+        font-size: 2.2rem;
+    }
+
+    :root{
+        --image-width:220px;
+    }
+
+    #section1 p{
+        font-size: 1.3rem;
+    }
+}
+
+@media (min-width:1100px) {
+    :root {
+        --universal-width:60vw;
+        --image-width:230px;
+    }
+
+    #section1 h1 {
+        font-size: 2.4rem;
+    }
+
+    #section1 p{
+        font-size: 1.4rem;
+    }
+}
+
+@media (min-width:1300px) {
+    :root {
+        --universal-width:65vw;
+        --image-width:240px;
+    }
+
+    #section1 h1 {
+        font-size: 2.5rem;
+    }
+
+    #section1 p{
+        font-size: 1.5rem;
+    }
+
+    #icons::after {
+        height: calc(var(--universal-height) + 10px);
+    }
+}
+
+@media (min-width:1500px) {
+    :root {
+        --universal-width:70vw;
+        --image-width:250px;
+    }
+
+    #section1 h1 {
+        font-size: 2.6rem;
+    }
+
+    #section1 p{
+        font-size: 1.6rem;
+    }
+
+    #icons::after {
+        height: calc(var(--universal-height) + 25px);
+    }
+}
+
+@media (min-width:1700px) {
+    :root {
+        --universal-width:73vw;
+        --image-width:250px;
+    }
+
+    #section1 h1 {
+        font-size: 2.7rem;
+    }
+
+    #section1 p{
+        font-size: 1.7rem;
+    }
+
+    #icons::after {
+        height: calc(var(--universal-height) + 35px);
+    }
+}
+
+@media (min-width:1900px) {
+    :root {
+        --universal-width:75vw;
+        --image-width:260px;
+        --universal-gap:10px;
+    }
+
+    #section1 h1 {
+        font-size: 2.8rem;
+    }
+
+    #section1 p{
+        font-size: 1.8rem;
+    }
+
+    #icons::after {
+        height: calc(var(--universal-height) + 45px);
+    }
+}
