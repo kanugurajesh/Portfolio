@@ -79,6 +79,10 @@ Thanks for strolling through my digital realm! Excited about the prospect of wor
 - **Documentation**: Clear and concise documentation for developers.
 - **Continuous Integration/Continuous Deployment (CI/CD)**: Automated testing and deployment.
 
+## Demo
+
+![Rajesh Portfolio - Google Chrome 2023-12-02 19-35-08](https://github.com/kanugurajesh/Portfolio/assets/120458029/3d5029e2-1b59-448b-ae52-9a121cc33e3e)
+
 ## Installation
 
 1. **Clone the repository:**
