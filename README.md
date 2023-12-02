@@ -1,20 +1,31 @@
 🚀 **Embark on a Sleek Journey through My Portfolio!**
 
-Hey there! 👋 I'm [Your Name], your friendly [Your Profession/Title] on a mission to blend creativity with functionality. Welcome to my digital playground! 🌐✨
+Hey there! 👋 I'm Rajesh, your friendly full stack web developer on a mission to blend creativity with functionality. Welcome to my digital playground! 🌐✨
 
 **Get to Know Me 🤓**
 
-Fuelled by passion, I specialize in [Your Expertise]. From pixels to code, I bring innovation to life. 🚀
+Fuelled by passion, I specialize in web development. From pixels to code, I bring innovation to life. 🚀
 
 **Dive into My Showcase 🌟**
 
-*Project 1: [Project Name]*
+*Project 1: Movie-Recommendation-System*
 
-Dive into the awesomeness! 🚗💨 [Brief description of the project, highlighting achievements.]
+Dive into the awesomeness! 🚗💨 
 
-*Project 2: [Project Name]*
+1. Build the project using sveletekit & fastapi
+2. Recommends movies based on a dataset with good accuracy
+3. It is responsive and as a good ui-ux design
 
-Double the fun! 🎉 [Repeat for additional projects, showcasing versatility and expertise.]
+*Project 2: Text-Recognition-Image*
+
+An application to extract text from images
+
+1. Build using sveltekit
+2. It provides accuracy with good design
+
+Kindly checkout my repo you will find all the amazing projects I have build throughout my developer Journey
+
+Double the fun! 🎉
 
 **Why Me? 🌈**
 
@@ -22,17 +33,17 @@ Double the fun! 🎉 [Repeat for additional projects, showcasing versatility and
 
 - **Team Player Vibes:** Effective communication and collaboration are my superpowers, ensuring seamless teamwork.
 
-- **Eternal Learner:** In the ever-evolving world of [Your Industry], I'm committed to staying ahead of the curve. 📚
+- **Eternal Learner:** In the ever-evolving world of Software Industry, I'm committed to staying ahead of the curve. 📚
 
 **Let's Chat! 📬**
 
 Ready to kickstart something awesome or just want to say hi? I'm just a message away! 🚀
 
-*Email:* [Your Email Address] 📧
+*Email:* kanugurajesh3@gmail.com 📧
 
-*LinkedIn:* [Your LinkedIn Profile] 🔗
+*LinkedIn:* https://www.linkedin.com/in/rajesh-kanugu-aba8a3254/ 🔗
 
-*GitHub:* [Your GitHub Profile] 🐙
+*GitHub:* https://github.com/kanugurajesh 🐙
 
 **Closing the Show 🌌**
 
