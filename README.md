@@ -78,3 +78,20 @@ Thanks for strolling through my digital realm! Excited about the prospect of wor
 - **Version Control**: Leveraging Git for version control.
 - **Documentation**: Clear and concise documentation for developers.
 - **Continuous Integration/Continuous Deployment (CI/CD)**: Automated testing and deployment.
+
+## Installation
+
+1. **Clone the repository:**
+
+   ```bash
+   git clone https://github.com/kanugurajesh/Portfolio.git
+   ```
+2. **Install the dependencies:**
+   ```bash
+   cd Portfolio
+   npm install
+   ```
+3. **Run the Project:**
+   ```bash
+   npm run dev
+   ```
