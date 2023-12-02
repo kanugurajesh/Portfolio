@@ -39,7 +39,7 @@ Double the fun! 🎉
 
 Ready to kickstart something awesome or just want to say hi? I'm just a message away! 🚀
 
-*Email:* kanugurajesh3@gmail.com 📧
+*Email:* kanugurajesh108@gmail.com 📧
 
 *LinkedIn:* https://www.linkedin.com/in/rajesh-kanugu-aba8a3254/ 🔗
 
